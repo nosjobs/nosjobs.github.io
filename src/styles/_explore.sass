@@ -1,0 +1,62 @@
+.explore
+  //font-size: 14px
+  //margin-bottom: 24px
+  //padding: 48px 0 0
+
+.explore-title
+  font-size: 34px
+  line-height: 1.15
+  margin-bottom: 32px
+  text-align: center
+  +media-query(lap)
+    font-size: 42px
+  +media-query(desk)
+    text-align: left
+    font-size: 48px
+
+.explore-title__normal
+  font-weight: normal
+
+.explore__body
+  +cf
+  +media-query(desk)
+    margin-left: -48px
+
+.explore__cell
+  +media-query(desk)
+    float: left
+    padding-left: 48px
+
+.explore__cell--main
+  margin-bottom: 24px
+  +media-query(desk)
+    margin-bottom: 0
+    width: 65%
+
+.explore__cell--aside
+  > :last-child
+    margin-bottom: 0
+  +media-query(desk)
+    width: 35%
+
+.explore-post
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 4px
+  background: whitesmoke
+  border: 1px solid #e5e5e5
+  margin-bottom: 24px
+  padding: 6px 6px 12px
+  text-align: center
+  & :last-child
+    margin-bottom: 0
+
+.explore-post__btn
+  display: block
+  margin-bottom: 12px
+  width: 100%
+
+.explore-post__info
+  font-size: 13px
+

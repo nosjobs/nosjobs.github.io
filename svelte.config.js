@@ -21,6 +21,9 @@ const config = {
 			precompress: false,
 			strict: false
 		}),
+    paths: {
+      base: '', // Leave this empty for root
+    },
     prerender: {
       entries: ['*'], // Isso garante que todas as rotas sejam prerenderizadas
 

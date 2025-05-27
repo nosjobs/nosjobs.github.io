@@ -57,7 +57,7 @@
         </ul-->
         <ul class="foot-social">
           <li>
-            <a href="" title="Nostr">
+            <a href="https://njump.me/npub10j5hz4l6l9ea6u2nut0r66v5d07lsqjaj4jl80sf0phyanaduefsnkc4cn" title="Nostr">
               <img src="/nostr.svg" alt="Nostr" />
             </a>
           </li>

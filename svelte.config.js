@@ -17,37 +17,10 @@ const config = {
 			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
-			fallback: 'index.html',
+			fallback: '404.html',
 			precompress: false,
-			strict: false
-		}),
-    paths: {
-      base: '', // Leave this empty for root
-    },
-    prerender: {
-      entries: ['*'], // Isso garante que todas as rotas sejam prerenderizadas
-
-      // Implementing handleHttpError
-      handleHttpError: (error) => {
-        // Log the error or handle it as needed
-        console.error('HTTP Error:', error);
-
-        // You can return a custom response or throw an error
-        // For example, you can return a 404 page
-        if (error.status === 404) {
-          return {
-            status: 404,
-            error: new Error('Page not found'),
-          };
-        }
-
-        // For other errors, you can return a generic error page or rethrow
-        return {
-          status: error.status || 500,
-          error: new Error('An unexpected error occurred'),
-        };
-      },
-    },
+			strict: true
+		})
 	}
 };
 

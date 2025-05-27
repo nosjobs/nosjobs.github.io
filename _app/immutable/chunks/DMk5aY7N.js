@@ -1,0 +1,1 @@
+const n=a=>{const t=JSON.parse(a.content),o={id:a.id,pubkey:a.pubkey,createdAt:a.created_at,kind:a.kind,job:t.job,company:t.company,slug:null,tags:[],expiration:null};for(const c of a.tags){const[e,s]=c;switch(e){case"t":o.tags.push(s);break;case"d":o.slug=s;break;case"expiration":o.expiration=s;break}}return console.log(o),o};export{n as p};

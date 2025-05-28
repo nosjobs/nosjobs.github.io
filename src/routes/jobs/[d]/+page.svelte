@@ -100,7 +100,7 @@
                 {#if company.name}
                   <span class="job__company">
                     na
-                    <a href="" target="_blank">{company.name}</a>
+                    <a href={company.website} target="_blank">{company.name}</a>
                   </span>
                 {/if}
               </h1>

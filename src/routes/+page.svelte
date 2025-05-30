@@ -63,27 +63,6 @@
   })
 </script>
 
-<svelte:head>
-  <meta name="description" content="Encontre ou anuncie vagas de trabalho no ecossistema Bitcoin. NosJobs conecta profissionais e empresas que compartilham valores descentralizados." />
-  <meta name="author" content="Anderson Juhasc" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="NosJobs - Conectando talentos e oportunidades no universo Bitcoin" />
-  <meta property="og:description" content="NosJobs é a plataforma ideal para quem vive o Bitcoin. Publique ou encontre vagas alinhadas com a economia descentralizada." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://nosjobs.space" />
-  <meta property="og:image" content="https://nosjobs.space/nosjobs-cover.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="NosJobs - Conectando talentos e oportunidades no universo Bitcoin" />
-  <meta name="twitter:description" content="Plataforma de empregos focada em Bitcoin. Vagas remotas, descentralizadas e alinhadas com o futuro do trabalho." />
-  <meta name="twitter:image" content="https://nosjobs.space/nosjobs-cover.jpg" />
-</svelte:head>
-
 <main class="main">
   <div class="explore">
     <div class="wrapper">

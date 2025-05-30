@@ -1,6 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
 
 <script>
+  import { MetaTags } from 'svelte-meta-tags'
   import { base } from '$app/paths'
   export let title = "Default Title"
   import '../styles/style.sass'
@@ -8,9 +9,35 @@
   import LoginButton from '$lib/components/LoginButton.svelte'
 </script>
 
-<svelte:head>
-  <title>NosJobs - Conectando talentos e oportunidades no universo Bitcoin</title>
-</svelte:head>
+<MetaTags
+  title="NosJobs - Conectando talentos e oportunidades no universo Bitcoin"
+  titleTemplate="%s"
+  description="Encontre ou publique vagas de trabalho no ecossistema Bitcoin. A plataforma ideal para quem vive o futuro descentralizado."
+  canonical="https://nosjobs.space"
+  openGraph={{
+    url: 'https://nosjobs.space',
+    title: 'NosJobs - Conectando talentos e oportunidades no universo Bitcoin',
+    description: 'NosJobs conecta profissionais e empresas que compartilham valores descentralizados. Vagas remotas, em Bitcoin, para quem acredita no futuro da liberdade financeira.',
+    images: [
+      {
+        url: 'https://nosjobs.space/nosjobs-cover.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'NosJobs - Plataforma de vagas no universo Bitcoin'
+      }
+    ],
+    siteName: 'NosJobs'
+  }}
+  twitter={{
+    creator: '@nosjobs', // troque pelo seu handle real, se houver
+    site: '@nosjobs',
+    cardType: 'summary_large_image',
+    title: 'NosJobs - Conectando talentos e oportunidades no universo Bitcoin',
+    description: 'Plataforma de empregos focada em Bitcoin. Vagas remotas, descentralizadas e alinhadas com o futuro do trabalho.',
+    image: 'https://nosjobs.space/nosjobs-cover.jpg',
+    imageAlt: 'NosJobs - Plataforma de empregos para usuários Bitcoin'
+  }}
+/>
 
 <main>
   <header class="head">

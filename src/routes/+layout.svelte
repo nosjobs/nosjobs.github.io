@@ -8,6 +8,10 @@
   import LoginButton from '$lib/components/LoginButton.svelte'
 </script>
 
+<svelte:head>
+  <title>NosJobs - Conectando talentos e oportunidades no universo Bitcoin</title>
+</svelte:head>
+
 <main>
   <header class="head">
     <div class="wrapper">

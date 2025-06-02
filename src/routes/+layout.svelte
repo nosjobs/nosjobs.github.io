@@ -98,7 +98,6 @@
             </a>
           </li>
         </ul>
-        <div class="foot-copy">© 2025 BitVagas</div>
       </div>
     </div>
   </footer>
